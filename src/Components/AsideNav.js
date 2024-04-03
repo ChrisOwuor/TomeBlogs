@@ -6,30 +6,37 @@ const AsideNav = () => {
   return (
     <div className="aside1  flex justify-center">
       <ul>
-        <li className=" m-4 ">
+        <li className=" m-4 rounded-md p-1 ">
           <NavLink to={"/"}>
-            <div className="flex flex-row align-middle outline-1 rounded-md outline p-5 shadow-md gap-4">
-              <HomeIcon fontSize="large" />
+            <div className="flex flex-row items-center  rounded-md   ">
+              <p className="text-lg font-semibold underline">Tome Blogs</p>
+            </div>
+          </NavLink>
+        </li>
+        <li className=" m-4 bg-gray-200 rounded-md p-1 ">
+          <NavLink to={"/"}>
+            <div className="flex flex-row items-center  rounded-md   ">
+              <HomeIcon fontSize="medium" />
               <p>Home</p>
             </div>
           </NavLink>
         </li>
-        <li className=" m-4">
+        <li className=" m-4 bg-gray-200 rounded-md p-1">
           <NavLink to={"/AddBlogs"}>
             {" "}
-            <div className="flex flex-row align-middle outline-1 rounded-md outline p-5 shadow-md gap-4">
+            <div className="flex flex-row  items-center  rounded-md   ">
               {" "}
-              <EditNoteIcon fontSize="large" />
+              <EditNoteIcon fontSize="medium" />
               <p>Add Blogs</p>
             </div>
           </NavLink>
         </li>
-        <li className=" m-4">
+        <li className=" m-4 bg-gray-200 rounded-md p-1">
           <NavLink to={"/Profile"}>
             {" "}
-            <div className="flex flex-row align-middle outline-1 rounded-md outline p-5 shadow-md gap-4">
+            <div className="flex flex-row items-center  rounded-md   ">
               {" "}
-              <AccountCircleRoundedIcon fontSize="large" />
+              <AccountCircleRoundedIcon fontSize="medium" />
               <p>View Profile</p>
             </div>
           </NavLink>
